@@ -189,6 +189,56 @@ class MyHome extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Container(
+                      margin: EdgeInsets.only(left: 80),
+                      width: double.infinity,
+                      height: 45,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          ResuableContainer(
+                            color: Colors.pink,
+                            width: 18,
+                            height: 4,
+                          ),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          ResuableContainer(
+                            color: Colors.pink,
+                            width: 18,
+                            height: 4,
+                          ),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          ResuableContainer(
+                            color: Colors.pink,
+                            width: 18,
+                            height: 4,
+                          ),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          ResuableContainer(
+                            color: Colors.pink,
+                            width: 18,
+                            height: 4,
+                          ),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          ResuableContainer(
+                            color: Colors.pink,
+                            width: 18,
+                            height: 4,
+                          ),
+                          SizedBox(
+                            width: 2,
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
             ),
