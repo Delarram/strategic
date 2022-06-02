@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:strategic/app/const/constant.dart';
 import 'package:strategic/app/const/resuable/resuable_small_container.dart';
 
+import '../../widget/detail.dart';
+import '../../widget/itemcard.dart';
+import '../../widget/product.dart';
+
 class MyHome extends StatelessWidget {
   const MyHome({Key? key}) : super(key: key);
 
@@ -31,6 +35,7 @@ class MyHome extends StatelessWidget {
           ],
         ),
         body: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
                 color: Colors.grey[50],
@@ -64,7 +69,7 @@ class MyHome extends StatelessWidget {
                           ),
                           Container(
                             margin: const EdgeInsets.only(top: 10),
-                            width: MediaQuery.of(context).size.width * 0.7,
+                            width: MediaQuery.of(context).size.width * 0.72,
                             height: double.infinity,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
@@ -74,7 +79,7 @@ class MyHome extends StatelessWidget {
                                     color: Colors.grey[50],
                                     borderRadius: const BorderRadius.all(
                                         Radius.circular(10))),
-                                margin: const EdgeInsets.only(left: 10),
+                                margin: const EdgeInsets.only(left: 30),
                                 width: MediaQuery.of(context).size.width * 0.88,
                                 height: double.infinity,
                                 child: Card(
@@ -189,60 +194,37 @@ class MyHome extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(left: 80),
-                      width: double.infinity,
-                      height: 45,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          ResuableContainer(
-                            color: Colors.pink,
-                            width: 18,
-                            height: 4,
-                          ),
-                          SizedBox(
-                            width: 2,
-                          ),
-                          ResuableContainer(
-                            color: Colors.pink,
-                            width: 18,
-                            height: 4,
-                          ),
-                          SizedBox(
-                            width: 2,
-                          ),
-                          ResuableContainer(
-                            color: Colors.pink,
-                            width: 18,
-                            height: 4,
-                          ),
-                          SizedBox(
-                            width: 2,
-                          ),
-                          ResuableContainer(
-                            color: Colors.pink,
-                            width: 18,
-                            height: 4,
-                          ),
-                          SizedBox(
-                            width: 2,
-                          ),
-                          ResuableContainer(
-                            color: Colors.pink,
-                            width: 18,
-                            height: 4,
-                          ),
-                          SizedBox(
-                            width: 2,
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
             ),
-            
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text("Titles you can read here",style: mlableStyle,),
+            ),
+
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding,vertical: 10),
+                child: GridView.builder(
+                  itemCount: products?.length,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      childAspectRatio: 0.75,
+                      mainAxisSpacing: kDefaultPadding,
+                      crossAxisSpacing: kDefaultPadding
+                  ),
+                  itemBuilder: (context, index) => ItemCard(product: products![index],
+                    press:()=> Navigator.push(context, MaterialPageRoute(
+                      builder:(context) => DetailScreen(
+                        product: products![index],
+                      ),
+                    ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
           ],
         )
     );
