@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:strategic/network/dio_movie_data_agent.dart';
 import 'package:strategic/network/http_movie_data_agent.dart';
 import 'package:strategic/view/pages/home_screen.dart';
 
 void main() {
-  HttpMovieDataAgentImpl().getNowPlayingMovies(1);
+  DioMovieDataAgentImpl().getNowPlayingMovies(1);
   runApp(const MyApp());
 }
 

@@ -61,8 +61,8 @@ class CityVo{
     this.video,
     this.voteAverage,
     this.voteCount});
-
+                             //key , value
   factory CityVo.fromJson(Map<String,dynamic> data) => _$CityVoFromJson(data);
-  Map<String, dynamic> toJson()=> _$CityVoToJson(this);
+  Map<String, dynamic> toJson()=> _$CityVoToJson(this);//
 }
 

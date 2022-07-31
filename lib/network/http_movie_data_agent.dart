@@ -12,7 +12,7 @@ class HttpMovieDataAgentImpl extends MovieDataAgent{//abstract class ko extends 
     paramPage : page.toString()
   };
 
-  var url= Uri.https(baseUrl,endPointGetPlaying,queryParameters);
+  var url= Uri.https(baseUrlHttp,endPointGetPlaying,queryParameters);
 
   http.get(url).then((value) => {
     debugPrint("Now Playing Movies========> ${value.body.toString()}")

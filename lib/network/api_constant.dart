@@ -1,7 +1,8 @@
 
 
 ///BaseUrl
-const String baseUrl = "api.themoviedb.org";
+const String baseUrlHttp = "api.themoviedb.org";
+const String baseUrlDio = "https://api.themoviedb.org";
 
 ///End_points
 const String endPointGetPlaying = "3/movie/now_playing";
