@@ -7,7 +7,7 @@ const String baseUrl = "api.themoviedb.org";
 const String endPointGetPlaying = "3/movie/now_playing";
 
 ///parameters
-const String paramGetNowPlaying ="api_key";
+const String paramApiKey ="api_key";
 const String paramLanguage ="language";
 const String paramPage="page";
 
