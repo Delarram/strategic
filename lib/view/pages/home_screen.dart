@@ -33,11 +33,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
         child: NavigationBar(
           height: 65,
           selectedIndex: index,
-          animationDuration: const Duration(seconds: 1),
           onDestinationSelected: (index) =>
-              setState(() => this.index = index,),
+              setState(() {
+                this.index = index;}),
           backgroundColor: Colors.grey[100],
-          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
           destinations: const [
             NavigationDestination(
               selectedIcon: Icon(Icons.home,color: Colors.pink),

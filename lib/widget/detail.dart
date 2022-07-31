@@ -42,3 +42,5 @@ class DetailScreen extends StatelessWidget {
     );
   }
 }
+//data layer is network lay and persistent layer communicated and take data and then give to necessary view layer
+//data Container also
