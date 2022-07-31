@@ -11,7 +11,7 @@ class DioMovieDataAgentImpl extends MovieDataAgent {
     paramLanguage : languageEnUs,
     paramPage : page.toString(),
     };
-    Dio().get("$baseUrlDio$endPointGetPlaying",queryParameters: queryParameters).then((value) => {
+    Dio().get("$baseUrlDio$endPointGetNowPlaying",queryParameters: queryParameters).then((value) => {
       debugPrint("Now Playing Movies========> ${value.toString()}")
     }).catchError((error){
       debugPrint("Now Playing Movies========> ${error.toString()}");
