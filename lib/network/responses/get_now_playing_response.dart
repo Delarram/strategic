@@ -21,4 +21,5 @@ class GetNowPlayingResponse{
 
   factory GetNowPlayingResponse.fromJson(Map<String,dynamic> data) => _$GetNowPlayingResponseFromJson(data);
   Map<String, dynamic> toJson()=> _$GetNowPlayingResponseToJson(this);
+
 }

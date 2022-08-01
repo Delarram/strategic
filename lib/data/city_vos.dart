@@ -63,6 +63,13 @@ class CityVo{
     this.voteCount});
                              //key , value
   factory CityVo.fromJson(Map<String,dynamic> data) => _$CityVoFromJson(data);
-  Map<String, dynamic> toJson()=> _$CityVoToJson(this);//
+  Map<String, dynamic> toJson()=> _$CityVoToJson(this);
+
+  @override
+  String toString() {
+    return 'CityVo{adult: $adult, backDropPath: $backDropPath, genreIds: $genreIds, id: $id, originalLanguage: $originalLanguage, originalTitle: $originalTitle, originalOverView: $originalOverView, popularity: $popularity, posterPath: $posterPath, releaseDate: $releaseDate, title: $title, video: $video, voteAverage: $voteAverage, voteCount: $voteCount}';
+  } //
+
+
 }
 

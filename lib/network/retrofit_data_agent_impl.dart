@@ -19,7 +19,7 @@ class RetrofitDataAgentImpl extends MovieDataAgent{
     mApi.
     getNowPlayingMovies(apiKey,languageEnUs,page.toString())
         .then((response) => {
-      debugPrint("Now Playing Movies========> ${response.body.toString()}")
+      response.results!.forEach((movie) => debugPrint(movie.toString()))
     }).catchError((error){
       debugPrint("Now Playing Movies========> ${error.toString()}");
     });
