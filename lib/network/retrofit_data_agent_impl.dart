@@ -5,7 +5,7 @@ import 'package:strategic/network/api_constant.dart';
 import 'package:strategic/network/movie_data_agent.dart';
 import 'package:strategic/network/the_movie_api.dart';
 
-class RetrofitDataAgentImpl extends MovieDataAgent{
+class RetrofitDataAgentImpl {
    late TheMovieApi mApi;
 
 //before singleton
@@ -16,7 +16,7 @@ class RetrofitDataAgentImpl extends MovieDataAgent{
   static final RetrofitDataAgentImpl _singleton = RetrofitDataAgentImpl._internal();
 
   factory RetrofitDataAgentImpl(){
-   return _singleton;
+   return _singleton; //single to didnt return new again and again thus we did
   }
   //after singleton
   RetrofitDataAgentImpl._internal(){

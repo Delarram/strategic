@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'date_vo.g.dart';
 
 @JsonSerializable()
-class DateVo {
+class DateVo { //objects
   @JsonKey(name: "maximum")
   String? maximum;
 

@@ -1,3 +1,4 @@
+/*
 import 'package:strategic/data/city_vos.dart';
 import 'package:strategic/data/models/movie_model.dart';
 import 'package:strategic/network/movie_data_agent.dart';
@@ -19,3 +20,4 @@ class MovieModelImpl extends MovieModel {
     return mDataAgent.getNowPlayingMovies(page);
   }
 }
+*/
