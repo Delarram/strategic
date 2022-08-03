@@ -1,11 +1,10 @@
-/*
 import 'package:strategic/data/city_vos.dart';
 import 'package:strategic/data/models/movie_model.dart';
 import 'package:strategic/network/movie_data_agent.dart';
 import 'package:strategic/network/retrofit_data_agent_impl.dart';
 
 class MovieModelImpl extends MovieModel {
-  MovieDataAgent mDataAgent = RetrofitDataAgentImpl();
+  MovieDataAgent mDataAgent = RetrofitDataAgentImpl() as MovieDataAgent;
 
   static final MovieModelImpl _singleton = MovieModelImpl._internal();
 
@@ -20,4 +19,3 @@ class MovieModelImpl extends MovieModel {
     return mDataAgent.getNowPlayingMovies(page);
   }
 }
-*/

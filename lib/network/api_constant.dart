@@ -4,7 +4,8 @@
 const String baseUrlHttp = "api.themoviedb.org";
 ///
 const String baseUrlDio = "https://api.themoviedb.org/";
-
+///image baseurl
+const String imageBaseUrl ="https://image.tmdb.org/t/p/w400/";
 ///End_points
 const String endPointGetNowPlaying = "3/movie/now_playing";
 
