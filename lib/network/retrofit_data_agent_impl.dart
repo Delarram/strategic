@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:strategic/data/city_vos.dart';
 import 'package:strategic/network/api_constant.dart';
 import 'package:strategic/network/movie_data_agent.dart';
-import 'package:strategic/network/the_movie_api.dart';
+import 'package:strategic/network/oldmovieapi/the_movie_api.dart';
 
 class RetrofitDataAgentImpl {
    late TheMovieApi mApi;
