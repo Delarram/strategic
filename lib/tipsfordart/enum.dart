@@ -7,8 +7,6 @@ void main(){
 
   }
 
-
-
  // City city = City.mogok;
  //
  // print(city.index);//if u wanna show with index which included in City

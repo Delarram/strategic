@@ -1,12 +1,17 @@
 void main(){
-  var number=1;
-
-  for(var i; i<10; i++){
-    print (number);
+ //Traditional for loop
+  var number= int.parse('5');
+  for(var i=0; i<1000; i++){
+    print ("hello${number}");
     number++;
   }
-  for (var i=0; i<20; i++){
-  print(number++);
-
+  //for in loop
+  var townShips = ['Mogok','Yangon','Mandalay'];
+  for(var townShip in townShips){
+    print(townShip);
   }
+  // // for (var i=0; i<20; i++){
+  // // print(number++);
+  //
+  // }
 }

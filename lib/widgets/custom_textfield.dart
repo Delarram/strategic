@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ResuableTextField extends StatelessWidget {
+class CustomTextField extends StatelessWidget {
   final double? height;
   final double width;
   final Color? color;
@@ -20,7 +20,7 @@ class ResuableTextField extends StatelessWidget {
   final String? labelText;
   final Color? suffixIconColor;
   final Function? onChange;
-  const ResuableTextField({
+  const CustomTextField({
     Key? key,
     this.imageIcon,
     this.height,
