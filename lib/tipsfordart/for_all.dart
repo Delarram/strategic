@@ -1,43 +1,28 @@
 void main(){
- //fixedLength list
- var myList = List.filled(6, 4, growable: false);
+ //spread operator
+ var first = [1,2,3,4,5,6,];
+ var second = [7,8,9,10];
+ var poudel = [...first,...second];
+ print(poudel.toString());
 
- myList = [11,22,33,];
-print(myList);
- print(myList[2]);
+ //Map
+ var doubleList = poudel.map((dp) => dp * 2);
+ print(doubleList.toString());
 
-//growable List
- List<String> growable = ["Yangon","Mogok","Mandalay"];
- print(growable);
- growable.addAll(["Taung kyi","Sagaing"]);
- print(growable);
- growable.add("Me");
- print(growable);
- print(growable.reversed);
- growable.removeAt(3);
- print(growable);
- growable.insert(3, "Mone ywa");
- print(growable);
- print(growable.length);
- print(growable[3]);
+//evenList
+ var evenList = poudel.where((number) => number.isEven);
+ print(evenList);
+//oddList
+ var oddList = poudel.where((number) => number.isOdd);
+ print(oddList);
+//reduceList
+ var reduceList = poudel.reduce((first, second) => first+second);
+ print(reduceList);
 
-//Pre populate
-List<int> cityList = [1,2,3,4,5,6,7,8,9];
-print(cityList.toString());
-
-//using if to pre populate growable
-bool isYangon = true;
-List<String> townList = ["Yangon",if(!isYangon)"Mogok"];
-print(townList);
-
-//myself
-bool isMandalay;
-List<String> Mandalay = ["Sagainng",if(isMandalay=true)"Min Mu"];
-print(Mandalay);
-//using for loop
-
-var numbers = [2,3];
-List<int> city = [for(var num in numbers) num * 2];
-print(city.toString());
-
+ //we will take list and will multiple with 3 and will collect oddnum
+ //and we will add these odd num and will show
+ var result = poudel.map((number) => number * 3 )
+              .where((number) => number.isOdd)
+               .reduce((first, second) => first + second);
+ print(result);
 }

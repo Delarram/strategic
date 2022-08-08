@@ -34,10 +34,9 @@ void main(){
   bool isMandalay;
   List<String> Mandalay = ["Sagainng",if(isMandalay=true)"Min Mu"];
   print(Mandalay);
-//using for loop
 
+//using for loop
   var numbers = [2,3];
   List<int> city = [for(var num in numbers) num * 2];
   print(city.toString());
-
 }

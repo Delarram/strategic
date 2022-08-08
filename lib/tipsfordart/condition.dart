@@ -6,10 +6,10 @@ void main(){
     number++;
   }
   //for in loop
-  var townShips = ['Mogok','Yangon','Mandalay'];
-  for(var townShip in townShips){
-    print(townShip);
-  }
+  // var townShips = ['Mogok','Yangon','Mandalay'];
+  // for(var townShip in townShips){
+  //   print(townShip);
+  // }
   // // for (var i=0; i<20; i++){
   // // print(number++);
   //

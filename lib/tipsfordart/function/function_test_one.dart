@@ -34,3 +34,10 @@ void checkCityYangon(){
     print("happy");
   }
 }
+// void main(){
+//  //Traditional for loop
+//  var number=0;
+//  for(var i=0; i<1000000; i++){
+//   print ("I like your hair  ❤️‍🔥 ${number} times,dont know why ");
+//   number++;
+//  }}
