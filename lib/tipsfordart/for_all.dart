@@ -25,4 +25,9 @@ void main(){
               .where((number) => number.isOdd)
                .reduce((first, second) => first + second);
  print(result);
+
+ var resultone = poudel.map((number) => number * 3 )
+     .where((number) => number.isEven)
+     .reduce((first, second) => first + second);
+ print(resultone);
 }
