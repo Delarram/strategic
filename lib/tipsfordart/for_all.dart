@@ -30,7 +30,12 @@ bool isYangon = true;
 List<String> townList = ["Yangon",if(!isYangon)"Mogok"];
 print(townList);
 
+//myself
+bool isMandalay;
+List<String> Mandalay = ["Sagainng",if(isMandalay=true)"Min Mu"];
+print(Mandalay);
 //using for loop
+
 var numbers = [2,3];
 List<int> city = [for(var num in numbers) num * 2];
 print(city.toString());

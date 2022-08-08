@@ -1,6 +1,6 @@
 void main(){
  //Traditional for loop
-  var number= int.parse('5');
+  var number=0;
   for(var i=0; i<1000; i++){
     print ("hello${number}");
     number++;
@@ -13,5 +13,14 @@ void main(){
   // // for (var i=0; i<20; i++){
   // // print(number++);
   //
+  // }
+  // bool isSarita = true;
+  // if(isSarita == true){
+  //   for(var i=0; i<1000; i++){
+  //     print ("hello${number}");
+  //     number++;
+  //   }
+  // }else {
+  //   print("She is beautiful");
   // }
 }
