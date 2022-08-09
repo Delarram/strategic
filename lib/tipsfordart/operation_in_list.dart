@@ -18,4 +18,12 @@ void main(){
 
   var reduceList = poudel.reduce((first, second) => first+second);
  print(reduceList);
+
+  //we will take list and will multiple with 3 and will collect oddnum
+  //and we will add these odd num and will show
+  var result = poudel.map((number) => number * 3 )
+      .where((number) => number.isOdd)
+      .reduce((first, second) => first + second);
+  print(result);
+
 }

@@ -1,37 +1,34 @@
 void main(){
- //spread operator
- var first = [1,2,3,4,5,6,];
- var second = [7,8,9,10];
- var poudel = [...first,...second];
- print(poudel.toString());
+  //creating a set
+  Set<int> townSet = {1,2,3,4,5,6,};
+  print(townSet);
 
- //Map
- var doubleList = poudel.map((dp) => dp * 2);
- print(doubleList.toString());
+  //creating duplicate
+  Set<int> duplicateSet = {1,2,3,4,5,5,5,};
+  print(duplicateSet);
 
-//evenList
- var evenList = poudel.where((number) => number.isEven);
- print(evenList);
-//oddList
- var oddList = poudel.where((number) => number.isOdd);
- print(oddList);
-//reduceList
- var reduceList = poudel.reduce((first, second) => first+second);
- print(reduceList);
+  //contain
+  print(townSet.contains(1));
 
- //we will take list and will multiple with 3 and will collect oddnum
- //and we will add these odd num and will show
- var result = poudel.map((number) => number * 3 )
-              .where((number) => number.isOdd)
-               .reduce((first, second) => first + second);
- print(result);
+  //add
+  townSet.addAll({1,2,3,4,5,6,9,6,6});
+  print(townSet);
 
- var resultone = poudel.map((number) => number * 3 )
-     .where((number) => number.isEven)
-     .reduce((first, second) => first + second);
- print(resultone);
- var resultoneone = poudel.map((number) => number * 3 )
-     .where((number) => number.isEven)
-     .reduce((first, second) => first + second);
- print(resultoneone);
+  //remove
+  townSet.removeAll({3,2});
+  print(townSet);
+
+  //adding list to a set//it will only take one value of duplicate
+  List<int> numberList = [1,23,54,56,6,];
+   townSet.addAll(numberList);
+   print(townSet);
+
+   //special function of sets
+  // intersection
+  Set<int> secondList = {11,12,15,56};
+  print(townSet.intersection(secondList));
+
+  //will take all value but if duplicate only one will its take
+  print(townSet.union(secondList));
+
 }
