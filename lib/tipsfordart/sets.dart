@@ -4,14 +4,14 @@ void main(){
   print(townSet);
 
   //creating duplicate
-  Set<int> duplicateSet = {1,2,3,4,5,5,5,};
+  Set<int> duplicateSet = {1,2,3,4,5,5,5,7};
   print(duplicateSet);
 
   //contain
   print(townSet.contains(1));
 
   //add
-  townSet.addAll({1,2,3,4,5,6,9,6,6});
+  townSet.addAll({1,2,3,4,5,6,9,6,7});
   print(townSet);
 
   //remove
