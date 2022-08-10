@@ -1,6 +1,6 @@
 import 'package:flutter/rendering.dart';
 
-void main(){
+void main() {
 // in this value,will show null output
   var number;
   print(number);
@@ -28,5 +28,9 @@ void main(){
   String? school;
   school?.toLowerCase();
 //      =
+
+  String? width;
+  String baby = width ?? "";
+  print(baby);
 
 }
