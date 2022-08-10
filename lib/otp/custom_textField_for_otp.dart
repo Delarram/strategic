@@ -31,7 +31,7 @@ class ResuableTextFieldOtp extends StatelessWidget {
             FocusScope.of(context).nextFocus();
           }
         },
-        cursorColor: const Color(0xff333333),
+        cursorColor: Colors.black26,
         keyboardType: TextInputType.number,
         textAlign: TextAlign.center,
         inputFormatters: [
@@ -48,5 +48,6 @@ class ResuableTextFieldOtp extends StatelessWidget {
         ),
       ),
     );
+
   }
 }
