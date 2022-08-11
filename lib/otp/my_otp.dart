@@ -93,7 +93,6 @@ class _MyOtpState extends State<MyOtp> {
                   vertical: 40.h,
                   horizontal: 20.w,
                   nextPage: () {
-
                   }, size: 15.sp,)
               ],
             ),

@@ -39,19 +39,19 @@ class _BottomNavigationState extends State<BottomNavigation> {
           backgroundColor: Colors.grey[100],
           destinations: const [
             NavigationDestination(
-              selectedIcon: Icon(Icons.home,color: Colors.pink),
+              selectedIcon: Icon(Icons.home,color: Colors.amber),
                 icon: Icon(Icons.home_outlined),
                 label:'Home' ),
             NavigationDestination(
-                selectedIcon: Icon(Icons.content_paste_rounded,color: Colors.pink),
+                selectedIcon: Icon(Icons.content_paste_rounded,color: Colors.amber),
                 icon: Icon(Icons.content_paste),
                 label:'Contents'),
             NavigationDestination(
-                selectedIcon: Icon(Icons.queue_play_next_outlined,color: Colors.pink),
+                selectedIcon: Icon(Icons.queue_play_next_outlined,color: Colors.amber),
                 icon: Icon(Icons.queue_play_next),
                 label:'Success Story' ),
             NavigationDestination(
-                selectedIcon: Icon(Icons.account_circle,color: Colors.pink),
+                selectedIcon: Icon(Icons.account_circle,color: Colors.amber),
                 icon: Icon(Icons.account_circle_outlined),
                 label:'About Us' ),
           ],
